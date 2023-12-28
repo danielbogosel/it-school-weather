@@ -6,6 +6,7 @@ let currentCity = document.querySelector(".current-city");
 function handleCityChange(city) {
   currentCity.innerHTML = city;
   displayWeater(city);
+  localStorage.setItem("city", city);
 }
 
 oradeaButton.addEventListener("click", function () {
