@@ -1,1 +1,1 @@
-displayWeater();
+displayWeater("Bucharest");

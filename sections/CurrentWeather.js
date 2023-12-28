@@ -1,5 +1,5 @@
-function displayWeater() {
-  const currentWeaterEndpoint = getCurrentWeatherEndpoint("Oradea");
+function displayWeater(city) {
+  const currentWeaterEndpoint = getCurrentWeatherEndpoint(city);
 
   fetch(currentWeaterEndpoint)
     .then((response) => response.json())
@@ -18,7 +18,7 @@ function displayWeater() {
       currentWeater.innerHTML = `
       <div class="px-3">
         <div class ="fs-3 mb-2"><strong>${name}</strong></div>
-        <div class ="fs-4"><strong>${day}</strong>, ${time}</div>
+        <div class ="fs-4"><strong>${dayOfTheWeek}</strong>, ${time}</div>
         <div class ="d-flex align-items-center jutify-content-center">
           <strong class="fs-1">${temperature}&deg;C</strong>
           <img src ="${weatherIcon}"/>
