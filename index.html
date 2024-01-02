@@ -55,7 +55,21 @@
               <li>
                 <button class="dropdown-item timisoara">Timișoara</button>
               </li>
-              <li><button class="dropdown-item oradea">Oradea</button></li>
+              <li>
+                <button class="dropdown-item oradea">Oradea</button>
+              </li>
+              <li>
+                <button class="dropdown-item arad">Arad</button>
+              </li>
+              <li>
+                <button class="dropdown-item sibiu">Sibiu</button>
+              </li>
+              <li>
+                <button class="dropdown-item brasov">Brașov</button>
+              </li>
+              <li>
+                <button class="dropdown-item constanta">Constanța</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -63,13 +77,15 @@
       <section class="py-5 bg-secondary">
         <div class="container">
           <h2 class="text-primary text-center mb-5">Vremea curentă</h2>
-          <div class="current-weather"></div>
+          <div
+            class="current-weather d-flex flex-wrap justify-content-evenly align-items-center"
+          ></div>
         </div>
       </section>
       <section class="py-5">
         <div class="container">
           <h2 class="text-primary text-center mb-5">Prognoză pe 5 zile</h2>
-          <div class="weather-forecast"></div>
+          <div class="weather-forecast d-flex flex-wrap"></div>
         </div>
       </section>
     </main>
@@ -91,6 +107,7 @@
     <script src="utils/weather.js"></script>
     <script src="sections/CurrentWeather.js"></script>
     <script src="sections/ChoseLocation.js"></script>
+    <script src="sections/ForecastWeather.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

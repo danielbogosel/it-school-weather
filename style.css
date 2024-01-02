@@ -53,13 +53,30 @@ main {
   flex-grow: 1;
 }
 
+.content-forecast > * {
+  flex: 1;
+}
 /* Header */
 header {
   height: 30vh;
 }
 
-.current-weather {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+@media (max-width: 576px) {
+  .current-weather {
+    text-align: center;
+  }
+
+  .current-weather img {
+    width: 75px;
+    height: auto;
+  }
+
+  .content-forecast img {
+    width: 50px;
+    height: auto;
+  }
+
+  .content-forecast .real-feel {
+    display: none;
+  }
 }

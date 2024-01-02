@@ -1,4 +1,4 @@
-function displayWeater(city) {
+function displayCurrentWeater(city) {
   const currentWeaterEndpoint = getCurrentWeatherEndpoint(city);
 
   fetch(currentWeaterEndpoint)
